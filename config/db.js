@@ -7,7 +7,7 @@ dotenv.config({ path: "../.env" });
 const {PGUSER, PGPASSWORD, PGHOST, PGDATABASE} = process.env;
 
 
-export const sql = neon(`postgresql://${PGUSER}:${PGPASSWORD}@${PGHOST}/${PGDATABASE}?sslmode=require`)
+export const sql = neon(`postgresql://${PGUSER}:${PGPASSWORD}@${PGHOST}/${PGDATABASE}?sslmode=require`);
 
 
 
